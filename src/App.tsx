@@ -1,6 +1,14 @@
 import React from 'react';
 import { Navbar, Footer } from './components/layout';
-import { Hero, Highlights, About, Showcase, VisitUs } from './components/sections';
+import {
+  Hero,
+  Highlights,
+  CoffeeExperience,
+  BakerySection,
+  About,
+  Showcase,
+  VisitUs,
+} from './components/sections';
 import { MenuSection } from './components/menu';
 
 export const App: React.FC = () => {
@@ -11,22 +19,28 @@ export const App: React.FC = () => {
 
       {/* 2. Main Page Content */}
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* 1. Hero Section */}
         <Hero />
 
-        {/* Highlights Section */}
+        {/* 2. Highlights Section */}
         <Highlights />
 
-        {/* About / Story Section */}
+        {/* 3. Our Coffee Experience */}
+        <CoffeeExperience />
+
+        {/* 4. Our Bakery */}
+        <BakerySection />
+
+        {/* 5. Our Story / About Us */}
         <About />
 
-        {/* Interactive Menu Section */}
+        {/* 6. Explore Our Menu (Interactive with Item Detail Modal & Filters) */}
         <MenuSection />
 
-        {/* Café Showcase Gallery Section */}
+        {/* 7. Inside Bean & Bite — Interior Showcase with Lightbox */}
         <Showcase />
 
-        {/* Visit Us & Hours Section */}
+        {/* 8. Visit Us & Hours */}
         <VisitUs />
       </main>
 

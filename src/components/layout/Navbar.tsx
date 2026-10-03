@@ -10,8 +10,11 @@ export interface NavItem {
 
 export const NAV_ITEMS: readonly NavItem[] = [
   { label: 'Home', href: '#home' },
+  { label: 'Coffee', href: '#coffee' },
+  { label: 'Bakery', href: '#bakery' },
   { label: 'Our Story', href: '#story' },
   { label: 'Menu', href: '#menu' },
+  { label: 'Inside', href: '#showcase' },
   { label: 'Visit Us', href: '#visit' },
 ] as const;
 
@@ -83,19 +86,19 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Desktop Navigation Links */}
           <nav
-            className="hidden md:flex items-center gap-1 lg:gap-2"
+            className="hidden lg:flex items-center gap-1 xl:gap-2"
             aria-label="Primary navigation"
           >
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="font-sans text-sm font-medium text-espresso/80 hover:text-coffee hover:bg-oat/50 px-3.5 py-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coffee focus-visible:ring-offset-2"
+                className="font-sans text-sm font-medium text-espresso/80 hover:text-coffee hover:bg-oat/50 px-3 py-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coffee focus-visible:ring-offset-2"
               >
                 {item.label}
               </a>
             ))}
-            <div className="ml-4 pl-4 border-l border-oat">
+            <div className="ml-3 pl-3 border-l border-oat">
               <Button
                 variant="primary"
                 size="sm"
@@ -108,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               ref={toggleButtonRef}
               type="button"
@@ -135,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation menu"
-        className={`md:hidden fixed inset-x-0 top-20 bottom-0 bg-cream border-t border-oat shadow-lg p-6 flex flex-col justify-between transition-all duration-200 ease-in-out z-50 ${
+        className={`lg:hidden fixed inset-x-0 top-20 bottom-0 bg-cream border-t border-oat shadow-lg p-6 flex flex-col justify-between transition-all duration-200 ease-in-out z-50 ${
           isOpen
             ? 'opacity-100 pointer-events-auto translate-y-0'
             : 'opacity-0 pointer-events-none -translate-y-2'
@@ -143,7 +146,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         style={{ height: 'calc(100vh - 5rem)' }}
       >
         <nav
-          className="flex flex-col space-y-2 pt-2"
+          className="flex flex-col space-y-1.5 pt-2 overflow-y-auto"
           aria-label="Mobile primary navigation"
         >
           {NAV_ITEMS.map((item) => (
@@ -151,14 +154,14 @@ export const Navbar: React.FC<NavbarProps> = ({
               key={item.href}
               href={item.href}
               onClick={handleLinkClick}
-              className="font-serif text-xl font-semibold text-espresso hover:text-coffee py-3 px-4 rounded-xl hover:bg-oat/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coffee"
+              className="font-serif text-lg font-semibold text-espresso hover:text-coffee py-2.5 px-4 rounded-xl hover:bg-oat/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coffee"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="border-t border-oat pt-6 pb-8 space-y-4">
+        <div className="border-t border-oat pt-4 pb-6 space-y-3 shrink-0">
           <Button
             variant="primary"
             size="lg"

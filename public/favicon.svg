@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#39251E"/>
+  <circle cx="16" cy="16" r="12" fill="#F3EBDD"/>
+  <!-- Coffee Cup Glyph -->
+  <path d="M10 13C10 12.4477 10.4477 12 11 12H20C20.5523 12 21 12.4477 21 13V18C21 20.2091 19.2091 22 17 22H14C11.7909 22 10 20.2091 10 18V13Z" fill="#704832"/>
+  <path d="M21 14H22.5C23.3284 14 24 14.6716 24 15.5C24 16.3284 23.3284 17 22.5 17H21V14Z" stroke="#704832" stroke-width="1.5"/>
+  <path d="M9 23H22" stroke="#704832" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Gentle Steam Lines -->
+  <path d="M13 8C13 9 12 9.5 12 10.5" stroke="#704832" stroke-width="1" stroke-linecap="round"/>
+  <path d="M16 7.5C16 8.5 15 9 15 10" stroke="#704832" stroke-width="1" stroke-linecap="round"/>
+  <path d="M19 8C19 9 18 9.5 18 10.5" stroke="#704832" stroke-width="1" stroke-linecap="round"/>
+</svg>

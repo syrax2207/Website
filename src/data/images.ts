@@ -28,25 +28,69 @@ export const CAFE_IMAGES = {
     description: 'Temporary hero image demonstrating warm café ambience',
   },
 
-  // Story: Fresh artisanal bakery and croissants
-  story: {
-    id: 'story-bakery',
-    url: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Golden flaky croissants and morning pastries freshly baked on parchment paper',
-    photographer: 'Mae Mu',
-    photographerUrl: 'https://unsplash.com/@itsmaemu',
-    description: 'Fresh bakery pastry craft for About/Story section',
+  // Coffee Experience: Focused craftsmanship and single-origin coffee
+  coffeeExperience: {
+    id: 'coffee-craft',
+    url: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Artisanal single-origin whole coffee beans beside handcrafted pour-over brewing kettle',
+    photographer: 'Mike Kenneally',
+    photographerUrl: 'https://unsplash.com/@mikekenneally',
+    description: 'Specialty coffee beans and careful brewing presentation',
   },
 
-  // Showcase Gallery (4 images)
+  // Bakery Showcase: Golden bakes and morning pastries
+  bakeryHero: {
+    id: 'bakery-craft',
+    url: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Golden flaky sourdough croissants and fresh morning pastries on parchment paper',
+    photographer: 'Mae Mu',
+    photographerUrl: 'https://unsplash.com/@itsmaemu',
+    description: 'Fresh bakery pastry craft for Bakery section',
+  },
+
+  // Story: Brand philosophy and community space
+  story: {
+    id: 'story-bakery',
+    url: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Warm, sunlit café seating area with natural wood tables inviting conversation',
+    photographer: 'Petr Sevcik',
+    photographerUrl: 'https://unsplash.com/@petrsevcik',
+    description: 'Welcoming neighbourhood seating atmosphere for About/Story section',
+  },
+
+  // Showcase Gallery: 6 curated interior & atmosphere moments
   showcase: [
+    {
+      id: 'showcase-interior',
+      url: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80',
+      alt: 'Bright, quiet café corner with comfortable wooden tables and natural sunlight',
+      photographer: 'Daiki Aizawa',
+      photographerUrl: 'https://unsplash.com/@daikiaizawa',
+      description: 'Cozy seating and workspace corner with natural morning light',
+    },
+    {
+      id: 'showcase-counter',
+      url: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80',
+      alt: 'Warm wooden café service counter with espresso machinery and clean workstation',
+      photographer: 'Demi DeHerrera',
+      photographerUrl: 'https://unsplash.com/@demi_deherrera',
+      description: 'Handcrafted espresso workstation and coffee preparation counter',
+    },
     {
       id: 'showcase-espresso',
       url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
       alt: 'Artisanal espresso with delicate latte art served in a ceramic cup',
       photographer: 'Fahmi Fakhrudin',
       photographerUrl: 'https://unsplash.com/@fahmifkr',
-      description: 'Handcrafted espresso drink presentation',
+      description: 'Calibrated espresso extraction with silky micro-foamed latte art',
+    },
+    {
+      id: 'showcase-pastries',
+      url: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80',
+      alt: 'Freshly baked morning bakery goods on display including cinnamon rolls and berry scones',
+      photographer: 'Jennifer Pallian',
+      photographerUrl: 'https://unsplash.com/@foodess',
+      description: 'Daily morning bake selection displayed warm from the oven',
     },
     {
       id: 'showcase-pourover',
@@ -54,23 +98,15 @@ export const CAFE_IMAGES = {
       alt: 'Barista carefully brewing a single-origin pour-over coffee with a gooseneck kettle',
       photographer: 'Nathan Dumlao',
       photographerUrl: 'https://unsplash.com/@nate_dumlao',
-      description: 'Single-origin pour-over brewing craft',
+      description: 'Slow-drip single-origin pour-over brewing station',
     },
     {
-      id: 'showcase-pastries',
-      url: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80',
-      alt: 'Selection of fresh baked bakery goods including cinnamon rolls and berry pastries',
-      photographer: 'Jennifer Pallian',
-      photographerUrl: 'https://unsplash.com/@foodess',
-      description: 'Artisanal morning bakes selection',
-    },
-    {
-      id: 'showcase-space',
-      url: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80',
-      alt: 'Bright, quiet café corner with comfortable wooden tables and natural sunlight',
-      photographer: 'Daiki Aizawa',
-      photographerUrl: 'https://unsplash.com/@daikiaizawa',
-      description: 'Quiet, welcoming seating space for morning visitors and remote work',
+      id: 'showcase-table',
+      url: 'https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=800&q=80',
+      alt: 'Morning coffee cup and open notebook on a rustic café table',
+      photographer: 'Toa Heftiba',
+      photographerUrl: 'https://unsplash.com/@heftiba',
+      description: 'Comfortable table setting for morning reading, journaling, or conversation',
     },
   ],
 } as const;

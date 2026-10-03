@@ -49,9 +49,9 @@ export const Highlights: React.FC = () => {
                 {item.icon}
               </div>
 
-              <h2 className="font-serif text-xl sm:text-2xl font-bold text-espresso mb-2.5">
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-espresso mb-2.5">
                 {item.title}
-              </h2>
+              </h3>
 
               <p className="font-sans text-sm sm:text-base text-espresso/75 leading-relaxed">
                 {item.description}

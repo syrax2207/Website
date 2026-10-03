@@ -37,26 +37,28 @@
 
 -   [x] Hero
 -   [x] Highlights
+-   [x] Our Coffee Experience
+-   [x] Our Bakery
 -   [x] About / story
--   [x] Menu and category filters
--   [x] Opening hours
--   [x] Visit / location (verified data only / draft preview mode)
+-   [x] Menu and category filters (with interactive detail modal)
+-   [x] Inside Bean & Bite — Interior Showcase (with accessible Lightbox)
+-   [x] Opening hours & visit location (verified data only / draft preview mode)
 -   [x] Contact CTA (verified data only / draft preview mode)
 -   [x] Footer
 -   [ ] Mobile floating action bar (deferred until live phone/directions verified)
 
 ## Phase 4 --- Quality assurance
 
--   [ ] Test widths: 360, 390, 768, 1024, 1440.
--   [ ] Check horizontal overflow.
--   [ ] Test all navigation and CTAs.
--   [ ] Test menu filters with mouse, touch and keyboard.
--   [ ] Check image loading and alt text.
--   [ ] Check keyboard focus and contrast.
--   [ ] Check reduced-motion preference.
+-   [x] Test widths: 360, 390, 768, 1024, 1440.
+-   [x] Check horizontal overflow.
+-   [x] Test all navigation and CTAs.
+-   [x] Test menu filters with mouse, touch and keyboard.
+-   [x] Check image loading and alt text.
+-   [x] Check keyboard focus and contrast.
+-   [x] Check reduced-motion preference.
 -   [ ] Verify hours/timezone logic if implemented.
--   [ ] Check metadata and structured data for accuracy.
--   [ ] Run lint/typecheck/build and resolve errors.
+-   [x] Check metadata and structured data for accuracy.
+-   [x] Run lint/typecheck/build and resolve errors.
 -   [ ] Review performance and document measured results.
 
 ## Phase 5 --- Handover

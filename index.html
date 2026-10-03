@@ -2,16 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/brand/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bean &amp; Bite Coffee &amp; Bakery</title>
-    <meta name="description" content="Artisanal neighbourhood coffee shop and bakery. Fresh bakes, honest beans, warm conversations." />
-    <meta property="og:title" content="Bean &amp; Bite Coffee &amp; Bakery" />
-    <meta property="og:description" content="Artisanal neighbourhood coffee shop and bakery. Fresh bakes, honest beans, warm conversations." />
-    <!-- Google Fonts for Playfair Display and DM Sans -->
+    <meta name="theme-color" content="#FFFDF8" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- Document Title and Description -->
+    <title>Bean &amp; Bite Coffee &amp; Bakery | Coffee and Fresh Bakes</title>
+    <meta
+      name="description"
+      content="Discover the Bean &amp; Bite coffee shop concept, featuring specialty coffee, handcrafted espresso drinks and a selection of bakery favourites."
+    />
+
+    <!-- Robots Meta Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Canonical URL managed dynamically in client-side context to avoid static directory resolution -->
+    <link rel="canonical" id="canonical-url" href="" />
+
+    <!-- Brand Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/svg+xml" href="/assets/brand/logo.svg" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bean &amp; Bite Coffee &amp; Bakery" />
+    <meta property="og:title" content="Bean &amp; Bite Coffee &amp; Bakery | Coffee and Fresh Bakes" />
+    <meta
+      property="og:description"
+      content="Discover the Bean &amp; Bite coffee shop concept, featuring specialty coffee, handcrafted espresso drinks and a selection of bakery favourites."
+    />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&h=630&q=80" />
+    <meta property="og:image:alt" content="Bean &amp; Bite Coffee &amp; Bakery warm artisan coffee shop ambience" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bean &amp; Bite Coffee &amp; Bakery | Coffee and Fresh Bakes" />
+    <meta
+      name="twitter:description"
+      content="Discover the Bean &amp; Bite coffee shop concept, featuring specialty coffee, handcrafted espresso drinks and a selection of bakery favourites."
+    />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&h=630&q=80" />
+    <meta name="twitter:image:alt" content="Bean &amp; Bite Coffee &amp; Bakery warm artisan coffee shop ambience" />
+
+    <!-- Preconnect & Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <!-- NOTE: LocalBusiness schema intentionally omitted until physical address, coordinates, and phone are verified by owner -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "/#website",
+            "url": "/",
+            "name": "Bean & Bite Coffee & Bakery",
+            "description": "Discover the Bean & Bite coffee shop concept, featuring specialty coffee, handcrafted espresso drinks and a selection of bakery favourites.",
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "/#organization",
+            "name": "Bean & Bite Coffee & Bakery",
+            "alternateName": "Bean & Bite",
+            "description": "Artisanal neighbourhood coffee shop and bakery concept specialising in single-origin pour-overs, calibrated espresso, and fresh sourdough bakes.",
+            "slogan": "Fresh Bakes, Honest Beans, Warm Conversations.",
+            "founder": {
+              "@type": "Person",
+              "name": "Alex Rivera"
+            },
+            "knowsAbout": [
+              "Specialty Coffee",
+              "Single-Origin Pour-Over Coffee",
+              "Espresso Extraction",
+              "Sourdough Bakery Pastries"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-cream text-espresso font-sans antialiased min-h-screen selection:bg-oat selection:text-espresso">
     <div id="root"></div>

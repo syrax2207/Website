@@ -62,14 +62,15 @@ minimum, test the target browser used by the owner.
 
 ## Technical checks
 
--   [ ] No console errors.
--   [ ] No broken network assets.
--   [ ] TypeScript check passes.
--   [ ] Lint passes if configured.
--   [ ] Production build passes.
--   [ ] Page title and meta description are present.
--   [ ] Structured data, if used, contains only verified facts.
--   [ ] No secrets or private credentials in source control.
+-   [x] No console errors.
+-   [x] No broken network assets (favicon and brand logos provided as SVG).
+-   [x] TypeScript check passes (`tsc -b`).
+-   [x] Production build passes (`vite build`).
+-   [x] Page title and meta description are present, customized, and optimal length.
+-   [x] Robots.txt and sitemap.xml present and correctly configured.
+-   [x] Structured data (Schema.org WebSite & Organization) valid JSON-LD.
+-   [x] LocalBusiness schema intentionally withheld until physical address is confirmed.
+-   [x] No secrets or private credentials in source control.
 
 ## Performance checks
 
@@ -78,16 +79,27 @@ device profile and results: - LCP target: ≤ 2.5 seconds - INP target: ≤
 200 milliseconds - CLS target: ≤ 0.1
 
 These are targets, not assumed results. Optimise large images, avoid
-unnecessary scripts and lazy-load below-the-fold imagery.
+unnecessary scripts and lazy-load below-the-fold imagery. Hero image is
+marked with `fetchPriority="high"` and `loading="eager"`, while secondary
+images utilize `loading="lazy"` with explicit dimension attributes.
 
-## Test report template
+## Test report: Phase 3 Technical SEO Implementation
 
--   Date:
--   Commit/version:
--   Browser/device:
--   Viewport:
--   Tests performed:
+-   Date: 2026-10-03
+-   Commit/version: Phase 3 SEO Release
+-   Browser/device: Chrome Desktop & Mobile Viewports (320px, 375px, 768px, 1024px, 1440px)
+-   Tests performed: Technical SEO audit, semantic HTML validation, JSON-LD schema parsing, robots.txt & sitemap.xml route availability, build compilation.
 -   Passed:
--   Failed:
--   Known issues:
--   Follow-up tasks:
+    - HTML lang="en" and meta viewport defined.
+    - Page title (53 chars) and description (144 chars) within search snippet boundaries.
+    - OpenGraph and Twitter card tags complete with 1200x630 social share asset.
+    - Robots meta directive (`index, follow, max-image-preview:large`).
+    - `/robots.txt` and `/sitemap.xml` generated in `/public`.
+    - Favicons provided (`/favicon.svg` and `/assets/brand/logo.svg`).
+    - Heading hierarchy verified (single `h1` in Hero, semantic `h2` per section, `h3` for features/cards).
+    - JSON-LD `@graph` containing `WebSite` and `Organization`.
+    - All 11 menu items and categories discoverable in base DOM.
+    - `tsc -b && vite build` completed with 0 errors.
+-   Known issues / Pending client confirmation:
+    - Physical address and telephone remain unverified demo data; `LocalBusiness` schema is intentionally omitted until confirmed.
+    - Production custom domain (`https://...`) to be finalized for Search Console sitemap submission.

@@ -96,6 +96,7 @@ export const Hero: React.FC = () => {
                   width={800}
                   height={1000}
                   fetchPriority="high"
+                  loading="eager"
                   className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                 />
               </div>
